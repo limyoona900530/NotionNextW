@@ -10,21 +10,12 @@ const BLOG = {
   LANG: process.env.NEXT_PUBLIC_LANG || 'zh-CN', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
   SINCE: 2021, // e.g if leave this empty, current year will be used.
   
-  //APPEARANCE: process.env.NEXT_PUBLIC_APPEARANCE || 'light'
-  APPEARANCE: 'auto', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
-
+  APPEARANCE: process.env.NEXT_PUBLIC_APPEARANCE || 'auto', // ['light', 'dark', 'auto'], // light 日间模式 ， dark夜间模式， auto根据时间和主题自动夜间模式
   CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || false, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
-
-  //AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'NotionNext'
-  AUTHOR: 'Anthony', // 您的昵称 例如 tangly1024
-  
-  //BIO: process.env.NEXT_PUBLIC_BIO
-  BIO: 'Zihao Tang, School of Computer and Software, Shenzhen University', // 作者简介
-  
+  AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'Anthony',
+  BIO: process.env.NEXT_PUBLIC_BIO || 'Zihao Tang, School of Computer and Software, Shenzhen University', // 作者简介
   LINK: process.env.NEXT_PUBLIC_LINK || '', // 网站地址
-  
-  //KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD
-  KEYWORDS:'Dream, Human,Technology', // 网站关键词 英文逗号隔开
+  KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Dream, Human,Technology', // 网站关键词 英文逗号隔开
   
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
   CONTACT_EMAIL: process.env.NEXT_PUBLIC_CONTACT_EMAIL || '', // 邮箱地址 例如mail@tangly1024.com

@@ -66,7 +66,7 @@ const BLOG = {
 
   BACKGROUND_LIGHT: '#eeeeee', // use hex value, don't forget '#' e.g #fffefc
   BACKGROUND_DARK: '#000000', // use hex value, don't forget '#'
-  SUB_PATH: '', // leave this empty unless you want to deploy in a folder
+  SUB_PATH: '', // leave this empty unless you want to deploy in a folder 
 
   POST_URL_PREFIX: process.env.NEXT_PUBLIC_POST_URL_PREFIX || 'article',
   // POST类型文章的默认路径前缀，例如默认POST类型的路径是  /article/[slug]
